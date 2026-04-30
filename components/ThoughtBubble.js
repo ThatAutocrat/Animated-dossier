@@ -28,20 +28,18 @@ const ThoughtBubble = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 max-w-[220px]">
-      <div
-        onClick={refresh}
-        className="relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-2xl p-3 text-xs leading-relaxed cursor-pointer shadow-sm"
-        title="click for another"
-      >
-        <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1">thought of the day</p>
-        <p className="text-gray-700 dark:text-gray-200">{thought}</p>
-        <div className="absolute -bottom-3 left-5 w-3 h-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-full" />
-        <div className="absolute -bottom-5 left-3 w-2 h-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-full" />
-      </div>
-      <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center mt-3 ml-2 text-base">🧠</div>
+  <div style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999, maxWidth: '220px' }}>
+    <div
+      onClick={refresh}
+      style={{ position: 'relative', background: 'white', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '12px', fontSize: '12px', cursor: 'pointer', lineHeight: '1.6' }}
+    >
+      <p style={{ fontSize: '10px', color: '#a0aec0', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 4px 0' }}>thought of the day</p>
+      <p style={{ color: '#4a5568', margin: 0 }}>{thought}</p>
+      <div style={{ position: 'absolute', bottom: '-10px', left: '20px', width: '10px', height: '10px', background: 'white', border: '1px solid #e2e8f0', borderRadius: '50%' }} />
+      <div style={{ position: 'absolute', bottom: '-18px', left: '12px', width: '6px', height: '6px', background: 'white', border: '1px solid #e2e8f0', borderRadius: '50%' }} />
     </div>
-  );
-};
+    <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#f7fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '12px', marginLeft: '8px', fontSize: '16px' }}>🧠</div>
+  </div>
+)
 
 export default ThoughtBubble;
