@@ -45,9 +45,9 @@ const VoxelDog = () => {
 
       const target = new THREE.Vector3(-0.5, 1.2, 0)
       const initialCameraPosition = new THREE.Vector3(
-        12 * Math.sin(0.2 * Math.PI),
+        6 * Math.sin(0.2 * Math.PI),
         10,
-        12 * Math.cos(0.2 * Math.PI)
+        6 * Math.cos(0.2 * Math.PI)
       )
 
       // 640 -> 240
