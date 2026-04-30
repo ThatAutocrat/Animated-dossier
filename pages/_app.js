@@ -6,7 +6,8 @@ import Payhip from '../components/payhip'
 import { Analytics } from '@vercel/analytics/react'
 import ThoughtBubble from '../components/ThoughtBubble'
 import VisitorGlobe from '../components/VisitorGlobe'
-import CursorTrail from '../components/CursorTrail'// unique things i added
+import CursorTrail from '../components/CursorTrail'
+import NowPlaying from '../components/NowPlaying'// unique things i added
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
@@ -19,7 +20,8 @@ function Website({ Component, pageProps, router }) {
       <Payhip />
       <ThoughtBubble />
       <VisitorGlobe />
-      <CursorTrail />{/* add this */}
+      <CursorTrail />
+      <NowPlaying />{/* add this */}
       <Layout router={router}>
         <AnimatePresence
           mode="wait"
