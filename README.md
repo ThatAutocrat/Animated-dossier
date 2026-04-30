@@ -1,4 +1,5 @@
 # Animated portfolio
+<img width="1137" height="806" alt="image" src="https://github.com/user-attachments/assets/598e9c2f-0ed7-4a4a-8856-d6ec07ce4448" />
 
 
 
