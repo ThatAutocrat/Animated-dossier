@@ -13,7 +13,7 @@ const NowPlaying = () => {
   return (
     <div style={{
       position: 'fixed',
-      bottom: '200px',
+      bottom: '250px',
       left: '24px',
       zIndex: 9999,
       background: '#1e2330',
